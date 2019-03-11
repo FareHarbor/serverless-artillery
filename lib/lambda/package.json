@@ -4,6 +4,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "artillery-core": "^2.0.3-0",
-    "csv-parse": "^1.3.3"
+    "csv-parse": "^1.3.3",
+    "artillery-plugin-cloudwatch": "https://github.com/FareHarbor/artillery-plugin-cloudwatch.git"
   }
 }
