@@ -28,6 +28,10 @@ provider: # Using Node JS v4.3 on AWS
             - Ref: "AWS::AccountId"
             - "function"
             - "${self:service}-${opt:stage, self:provider.stage}-loadGenerator*" # must match function name
+    - Effect: "Allow"
+      Action:
+       - "cloudwatch:PutMetricData"
+      Resource: "*"
 
 functions:
   loadGenerator: # !!Do not edit this name!!
